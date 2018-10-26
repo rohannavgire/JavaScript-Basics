@@ -2,29 +2,19 @@
 	based on a given key */
 
 
-const convert = (objArray, key) => {
+const convert = (objArray, key) => {	
 	if (Array.isArray(objArray))	{
-		objArray.reduce((obj, item) => {
+		return objArray.reduce(function(obj, item) {
 			obj[item[key]]=item;
-			console.log(typeof(obj));					
 			return obj;
+			//console.log(typeof(obj));								
 		}, {});
 	}
 	else
 		return null;
 };	
-		
-/*
-const flatten = (arr) => {
-    if (Array.isArray(arr))	{
-        return arr.reduce(function (flat, toFlatten) {
-            return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
-        }, []); 
-    }
-    else
-        return null;  
-};
-*/
+
+
 
 
 /* For example,
