@@ -13,4 +13,4 @@ var fruitArray = [
     {name:'Orange', color:'Orange', ppk:500},
 ];
 
-console.log(fruitArray.find(fruit => fruit.name === 'Kiwi'));
+console.log(fruitArray.find(fruit => fruit.name === 'Kiwi')); //{ name: 'Kiwi', color: 'Green', ppk: 400 }
