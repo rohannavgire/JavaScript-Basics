@@ -14,7 +14,7 @@ const buildPyramid = (ht) => {
         } 
 
     }
-    console.log(pyramids);
+    //console.log(pyramids);
     
     return pyramids; 
 };
